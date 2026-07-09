@@ -1,344 +1,119 @@
-# Etsy Clone — White-Label Solution by Miracuves
+# Etsy Clone — White-Label Multi-Vendor E-Commerce Marketplace by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxbaba.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/etsy-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxazon.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/etsy-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/etsy-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXAzon** is a production-ready, white-label Etsy clone: a complete multi-vendor marketplace with buyer, seller, and admin panels — delivered with **100% source code ownership** in **6 working days**.
+
+> 🛍️ **See it running before you talk to anyone.** Live buyer app, seller dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/etsy-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxbaba.mimeld.com](https://mxbaba.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/etsy-clone/#demo) | Users, content, plans, analytics |
+| 📱 Buyer App | [mas.mimeld.com](https://mas.mimeld.com) | Search, cart, checkout, track order, returns |
+| 🌐 Web Storefront | [mxazon.mimeld.com](https://mxazon.mimeld.com) | Full shopping experience in the browser |
+| 🏪 Seller Dashboard | [Solution page → Demo](https://miracuves.com/etsy-clone#demo) | Listings, orders, inventory, analytics, payouts |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/etsy-clone#demo) | Sellers, categories, commissions, fraud, analytics |
 
-Demo credentials: [miracuves.com/etsy-clone -> Demo section](https://miracuves.com/etsy-clone/#demo)
-
-## What Makes This Etsy Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Marketplace Founders | Launch a marketplace for handmade and artisan goods |
-| Craft Communities | Build a dedicated platform for niche creators |
-| Agencies | White-label artisan marketplace for clients |
+Demo credentials for all environments: **[miracuves.com/etsy-clone → Demo section](https://miracuves.com/etsy-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Etsy Clone Different
 
-1. Seller creates a storefront with products, descriptions, and pricing
-2. Customer browses categories or searches for specific items
-3. Customer purchases with secure payment processing
-4. For physical goods: seller ships with tracking. For digital: instant download
-5. Customer receives order and leaves a review
-6. Platform collects commission on each sale
+Most e-commerce scripts stop at "catalog + cart." This platform ships with the features that actually run a marketplace *business*:
 
----
+- **Multi-Vendor Commission Engine** — tiered commissions by category, seller tier, and region — same engine Amazon, Flipkart, and Meesho use for seller tiers
+- **COD + Prepaid Unified** — one checkout handles COD, prepaid, wallet, BNPL, EMI — with auto-reconciliation to bank accounts
+- **Seller-Built Storefronts** — each seller gets a customisable mini-storefront (logo, theme, banner) within your marketplace — like Flipkart Samarth or Amazon Handmade
+- **AI Catalog Moderation** — auto-flag duplicate / NSFW / counterfeit listings before they go live, with human review for appeals
+- **Native Logistics Integrations** — plug into Delhivery, Shiprocket, BlueDart, DHL, FedEx — one click for sellers, no API plumbing per carrier
 
-## Core Features
+## 📦 Core Features
 
-### Buyer/Client App
-- Browse services
-- Search & filter
-- Book & pay
-- Messaging
-- Reviews
-- Order tracking
+**Buyer:** search & filters · wishlist · 1-tap reorder · multiple payment methods · order tracking · returns & refunds · loyalty rewards · reviews & ratings · multi-language
 
-### Seller/Provider App
-- Profile setup
-- Service listing
-- Order mgmt
-- Earnings dashboard
-- Ratings
+**Seller:** product & inventory · order management · bulk listing · promo tools · shipping rules · sales analytics · payout requests · multi-store support
 
-### Admin Panel
-- Category management
-- User verification
-- Dispute resolution
-- Commission analytics
-- Promotions
+**Admin:** seller onboarding · category management · commission engine · dispute resolution · fraud detection · ad placement · analytics reports
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Product Recommendation** - Suggests products based on browsing history and purchase patterns
-- **AI Visual Search** - Image-based product search for similar items
-- **AI Fraud Detection** - Monitors transactions for fraudulent activity
-- **AI Matching** - Matches clients with best providers
-- **AI Pricing Suggestions** - Optimal pricing recommendations
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Customer App (iOS + Android) | Browse, purchase, review, wishlist |
-| Seller Dashboard (Web) | Storefront, listings, orders, analytics |
-| Admin Web Panel | Sellers, fees, disputes, analytics |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Buyer App<br/>Flutter]
+    B[Web Storefront<br/>Responsive]
+    W[Seller Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB/PG)]
+    G --> ES[Elasticsearch<br/>Product Search]
+    ES --> A
+    ES --> B
+    G --> PAY[Multi-Gateway]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js or Laravel backend · MongoDB or PostgreSQL · Redis for cart & session · Elasticsearch for product search · Stripe, Razorpay, PayPal, COD support, BNPL integrations
 
-| Layer | Technology |
-|---|---|
-| Mobile Apps | Flutter (iOS + Android, single codebase) |
-| Web Platform | React.js |
-| Backend API | Node.js + Express |
-| Database | MongoDB |
-| Payments | Stripe, Razorpay, PayPal |
-| Notifications | Firebase Cloud Messaging (FCM) |
-| Cloud Hosting | AWS / DigitalOcean / Contabo VPS |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/etsy-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- **Commission per sale** - take 5-15% from each transaction
-- **Listing fees** - flat fee per product listing
-- **Featured listings** - sellers pay for placement
-- **Subscription plans** - premium seller storefronts with extra features
-- Commission per transaction
-- Featured listings
-- Promoted profiles
-- Subscription plans
-- Lead generation fees
+Custom e-commerce marketplaces run $80k–$500k and 6–14 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for seller onboarding and digital marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Etsy Clone — Full Solution Page](https://miracuves.com/etsy-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Marketplace App Cost in 2026?](https://miracuves.com/etsy-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Etsy Clone Script in 2026](https://miracuves.com/etsy-clone/blog/) features, pricing & launch guide
+- 🧠 [Multi-Vendor Marketplace Economics: Commission Design](https://miracuves.com/etsy-clone/blog/) tiers, take rates, GMV math
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/etsy-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$2,899** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/etsy-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Customer App (iOS + Android)
-- Seller Dashboard (Web)
-- Admin Web Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: etsy clone, etsy clone script, ecommerce marketplace, multi-vendor, white label marketplace, online shopping, Flutter ecommerce app, Node.js marketplace*
 
 ---
-**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/etsy-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$2,899 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Global Handmade Goods Market (2024) | $700 billion |
-| Projected Market Size (2030) | $1.2 trillion |
-| CAGR | ~8% |
-| Key Growth Markets | USA, UK, Canada, Australia, India |
-| Average Artisan Revenue per Year | $50,000-$100,000 |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Handmade goods marketplaces (like Etsy, Notonthehighstreet)
-- Art and craft supply platforms
-- Vintage and antique marketplaces
-- Custom-made and personalized goods platforms
-- Freelance services
-- Home services
-- Creative marketplace
-- Professional services
-- Local services
-
----
-
-## Client Testimonials
-
-> *"We onboarded 500 artisans in the first month. The storefront customization tools are exactly what creators need."*
-> - Founder, Artisan Marketplace
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**How much does an Etsy clone cost?**
-A white-label Etsy clone from Miracuves starts at $2,899 with complete source code ownership.
-
-**Can sellers customize their storefronts?**
-Yes. Each seller gets a branded storefront with customization options.
-
-**Does it support digital downloads?**
-Yes. Digital goods with instant delivery are supported.
-
-**Do I get the source code?**
-Yes. Complete source code ownership is included.
-
-**How long does it take to launch?**
-6 business days from payment confirmation.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Amazon Clone - Ecommerce Platform](https://github.com/Miracuves-Solutions/Amazon-Clone)
-- [eBay Clone - Auction Marketplace](https://github.com/Miracuves-Solutions/eBay-Clone)
-- [Shopify Clone - Ecommerce CMS](https://github.com/Miracuves-Solutions/Shopify-Clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/etsy-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your artisan marketplace platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/etsy-clone](https://miracuves.com/etsy-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: etsy clone, etsy script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Etsy Clone
+{MX_NAME}         MXAzon
+{CATEGORY}        Multi-Vendor E-Commerce Marketplace
+{DEMO_WEB}        mxazon.mimeld.com
+{PRICE}           $2,899
+{SLUG}            etsy-clone
+{SOLUTION_URL}    https://miracuves.com/etsy-clone/
+{VERTICAL}        ecommerce
+
+See /tmp/verticals/ecommerce.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
